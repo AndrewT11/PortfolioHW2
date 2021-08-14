@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 
 }
 
@@ -10,8 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(228, 177, 82, .5);
-    border-radius: 12px;
+    background-color: rgb(22, 22, 22);
 }
 
 .navbar ul {
@@ -44,11 +44,12 @@
 #home {
     display: flex;
     flex-direction: column;
-    
+    background-color: rgb(169, 169, 169, 0.3);
     
     color:rgb(218, 185, 1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 400px;
+    height: 500px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -56,10 +57,10 @@
 
 #home::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
-    background: url('https://decider.com/wp-content/uploads/2019/05/one-punch-man-season-2-episode-6.jpg?quality=80&strip=all&w=646&h=431&crop=1') no-repeat center center/cover;
+    background: url('https://www.wallpapertip.com/wmimgs/14-140359_374419-title-white-tiger-animal-tiger-cats-grey.jpg') no-repeat center center/cover;
     height: 500px;
     width: 100%;
     z-index: -1;
@@ -104,36 +105,35 @@
 
 #pic {
     display: flex;
-    justify-content: center;
-    
 }
 
 #pic img {
-    width: 650px;
+    width: 575px;
     height: 400px;
 }
 
 #intro {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+   text-align: justify;
     padding: 10px;
+ 
 }
 
 #intro h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    
 }
 
 /* Portfolio Section */
 #portfolio {
     display: flex;
-    fle-direction: column;
+    flex-direction: column;
     background-color: rgb(0,0,0, 0.5);
     color: white;
-    align-items: center;
-    margin: 25px;
-
+    margin: 25px 50px;
+    border-radius: 15px;
 }
 
 .gallery {
@@ -145,17 +145,24 @@
 
 }
 
+
 .gallery img { 
     height: 240px;
     width: 360px;
     margin: 10px;
+    flex-direction: column;
     transition: all 0.5s ease;
 }
 
 .gallery img:hover {
-    box-shadow: 0 0 30px rgb(255, 208, 0);
+    box-shadow: 0 0 30px rgb(226, 226, 224);
     border-radius: 12px;
 
+}
+
+.hw1:hover {
+    
+    
 }
 
 /* Services Section */
@@ -163,6 +170,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -174,7 +183,7 @@
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 450px;
+    height: 200px;
     border: 1px solid black;
     margin: 10px;
     align-items: center;
@@ -184,6 +193,12 @@
     background: linear-gradient(to top, rgb(228, 177, 82) 50%, rgb(44, 43, 43) 50%);
     background-size: 100% 200%;
     transition: all .8s;
+    color: rgba(255, 230, 0, 0.883);
+
+}
+.box h2 {
+    font-size: 2rem;
+    justify-content: center;
 
 }
 
