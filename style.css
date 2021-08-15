@@ -167,7 +167,7 @@ body {
 /* PORTFOLIO TEST CODE FOR RISING HEADER IN PORTFOLIO ITEMS */
 .row {
     /* create our main grid with flexbox, use negative margins to 
-    offset the padding on the .card-column class */
+    offset the padding on the .port-column class */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -222,6 +222,7 @@ body {
 .port-item:hover, .item-header {
     /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
     box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+    transform: scale(1.1); 
 }
 
 
