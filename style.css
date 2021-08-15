@@ -22,6 +22,7 @@ body {
     background-color: rgb(22, 22, 22);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -69,7 +70,7 @@ body {
     top: 0;
     right: 0;
     background: url('tiger.jpg') no-repeat center center/cover;
-    height: 1000px;
+    height: 850px;
     width: 100%;
     z-index: -1;
     opacity: 0.8;
@@ -96,16 +97,12 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px gold;
 }
-#about h1 {
-    border: 2px solid white;
-    margin: 30px 40%;
-    border-radius: 15px;
-}
-
 #pic {
     display: flex;
+    width: 100%;
 }
 
 #pic img {
@@ -123,7 +120,13 @@ body {
 #intro h2 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color:rgb(167, 167, 168);
+    background-color: rgb(22, 22, 22, 0.7);
+}
+#intro p {
+    font-size: 1.5rem;
+    color:rgb(167, 167, 168);
 }
 
 /* Portfolio Section */
@@ -227,7 +230,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 5px solid black;
+    box-shadow: 0 0 20px gold;
     margin-bottom: 30px;
 
 
@@ -236,8 +239,8 @@ body {
 .contactbar ul {
     display: flex;
     justify-content: space-evenly;
-    
     list-style: none;
+    margin-bottom: 40px;
     
 
 }
