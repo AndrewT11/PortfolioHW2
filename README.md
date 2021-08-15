@@ -9,7 +9,7 @@ Students will create their own Portfolio to show case their skills and talents f
 **Note** Students currently have 1 project completed thus far.
 
 
-## Installation
+## Installation Instructions
 1. No installation necessary. Click on live webpage. 100% easy.
 
 
@@ -40,4 +40,15 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Credits
 Andrew Tran
 
-# Referenced Sources
+### Referenced Sources
+
+https://www.w3schools.com/css/
+https://developer.mozilla.org/en-US/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
+https://choosealicense.com/
+https://yoksel.github.io/flex-cheatsheet/
+https://www.youtube.com/watch?v=zAVhHHS_IH4&t=56s
+https://www.youtube.com/watch?v=zX3ikOsQg58&t=244s
+https://www.youtube.com/watch?v=YxatgOhNiZA&t=9s
+
+### License
