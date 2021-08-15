@@ -4,15 +4,14 @@
 Portfolio Creation Project
 
 ## Task
-
 Students will create their own Portfolio to show case their skills and talents for current and future projects.
-
-![Portfolio Screenshot](PortfolioHW2screenshot.png)
 
 **Note** Students currently have 1 project completed thus far.
 
+
 ## Installation
 1. No installation necessary. Click on live webpage. 100% easy.
+
 
 ## Acceptance Criteria
 Student's were to create a portfolio that included the following:
@@ -28,3 +27,17 @@ THEN that application's image should be larger in size than the others
 THEN I am taken to that deployed application
 -WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+
+## Screenshot
+![Portfolio Screenshot](PortfolioHW2screenshot.png)
+
+
+##Links
+[Deployed Website Link](https://andrewt11.github.io/PortfolioHW2/)
+[Code Repository Link](https://github.com/AndrewT11/PortfolioHW2)
+
+## Credits
+Andrew Tran
+
+# Referenced Sources
