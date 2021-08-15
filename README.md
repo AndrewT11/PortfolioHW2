@@ -44,7 +44,7 @@ Andrew Tran
 ### Referenced Sources
 
 * https://www.w3schools.com/css/
-* ://developer.mozilla.org/en-US/
+* https://developer.mozilla.org/en-US/
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
 * https://choosealicense.com/
 * https://yoksel.github.io/flex-cheatsheet/
