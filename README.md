@@ -30,7 +30,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 ## Screenshot
-![Portfolio Screenshot](PortfolioHW2screenshot.png)
+![Portfolio Screenshot](HW2Screenshotv2.png)
 
 
 ## Links
