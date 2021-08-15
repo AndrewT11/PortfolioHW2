@@ -1,4 +1,6 @@
-
+:root {
+--headercolor:rgb(167, 167, 168);
+}
 *{
     margin: 0;
     padding: 0;
@@ -81,7 +83,7 @@ body {
     align-items: center;
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 5%;
 }
 
 .headings {
@@ -100,6 +102,11 @@ body {
     margin-bottom: 10px;
     box-shadow: 0 0 30px gold;
 }
+
+#about h1 {
+    color: var(--headercolor);
+}
+
 #pic {
     display: flex;
     width: 100%;
@@ -233,8 +240,10 @@ body {
     justify-content: center;
     box-shadow: 0 0 20px gold;
     margin-bottom: 30px;
+}
 
-
+#contact h1 {
+    color: var(--headercolor);
 }
 
 .contactbar ul {
