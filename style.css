@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
    
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 /* Nav Bar */
@@ -11,7 +14,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22, 0.5);
+    position: sticky;
+    top: 0;
 }
 
 .navbar ul {
@@ -21,8 +26,8 @@
 }
 
 .navbar ul li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: century;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -30,13 +35,13 @@
     text-decoration: none;
     color: white;
     padding: 8px 25px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .navbar ul li a:hover {
-    background-color: rgb(216, 186, 19);
-    color:rgb(238, 255, 2);
-    box-shadow: 0 0 30px rgb(255, 208, 0);
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 30px white;
     border-radius: 12px;
 }
 
@@ -44,37 +49,33 @@
 #home {
     display: flex;
     flex-direction: column;
-    background-color: rgb(169, 169, 169, 0.3);
-    
-    color:rgb(218, 185, 1);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
     width: 100%;
     justify-content: center;
     align-items: center;
-
+    color:white;
 }
 
 #home::before {
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
-    background: url('https://www.wallpapertip.com/wmimgs/14-140359_374419-title-white-tiger-animal-tiger-cats-grey.jpg') no-repeat center center/cover;
-    height: 500px;
+    background: url('tiger.jpg') no-repeat center center/cover;
+    height: 900px;
     width: 100%;
     z-index: -1;
     opacity: 0.8;
 }    
-
+}
 .main { 
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(228, 177, 82, 0.897);
+    align-items: center;
     position: absolute;
     top: 30%;
-    right: 5%;  /*name to the right and 30% down from top.
-    pushed down from top because of absolute value */
+    right: 10%;
 }
 
 .headings {
@@ -83,16 +84,6 @@
     text-align: center;
     margin: 40px 0px;
 }
-/*
-.btn {
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    outlineL none;
-    transition: .5s ease-in;
-}
-*/
 
 /*  About Section */
 #about {
@@ -115,7 +106,7 @@
 #intro {
     display: flex;
     flex-direction: column;
-   text-align: justify;
+    text-align: justify;
     padding: 10px;
  
 }
@@ -123,14 +114,13 @@
 #intro h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    
 }
 
 /* Portfolio Section */
 #portfolio {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0,0,0, 0.5);
+    background-color: rgb(0,0,0, 0.9);
     color: white;
     margin: 25px 50px;
     border-radius: 15px;
@@ -139,19 +129,16 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     box-sizing: border-box;
-    transition: all 0.5s ease;
 
 }
 
 
 .gallery img { 
-    height: 240px;
     width: 360px;
+    height: 240px;
     margin: 10px;
-    flex-direction: column;
     transition: all 0.5s ease;
 }
 
@@ -161,70 +148,24 @@
 
 }
 
-.hw1:hover {
-    
-    
-}
-
-/* Services Section */
-#services {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
 
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 200px;
-    border: 1px solid black;
-    margin: 10px;
-    align-items: center;
-    text-align: justify;
-    padding: 10px;
-    border-radius: 15px;
-    background: linear-gradient(to top, rgb(228, 177, 82) 50%, rgb(44, 43, 43) 50%);
-    background-size: 100% 200%;
-    transition: all .8s;
-    color: rgba(255, 230, 0, 0.883);
-
-}
-.box h2 {
-    font-size: 2rem;
-    justify-content: center;
-
-}
-
-.box:hover {
-    background-position: left bottom;
-    color: white;
-    border: none;
-    box-shadow: 0 0 20px rgb(255, 4, 4);
-    
-}
 /* Contact Section */
 #contact {
+    display: flex;
     justify-content: center;
     border-top: 5px solid black;
+    margin-bottom: 30px;
 
 
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
-    justify-content: center;
+    
 
 }
 
@@ -234,4 +175,69 @@ ul li {
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+@media screen and (max-width: 786px) {
+/* Nav Bar */
+.navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Headings */
+.heading{
+    font-size: 2.5rem;
+}
+
+
+  /* ABOUT   */
+    #pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img{
+        width: 475;
+        height: 300px;
+    }
+
+    #intro h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+
+}
+/* Contact */
+
+@media screen and (max-width: 550px) {
+    /* Home */
+    #home{
+        height: 820px;
+    }
+
+/* About */
+#pic img {
+    width: 300px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+}
+
+/* Portfolio */
+.gallery img{
+    width: 275px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* Nav Bar  */
+.navbar ul li {
+    font-family: century;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
