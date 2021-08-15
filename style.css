@@ -113,16 +113,16 @@ body {
 }
 
 #pic img {
-    width: 525px;
+    width: 50%;
     height: 400px;
-    flex: 1 1 100%;
+   
 }
 
 #intro {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    flex: 1 1 100%;
+   
 }
 
 #intro h2 {
@@ -131,6 +131,7 @@ body {
     margin-bottom: 40px;
     color:rgb(167, 167, 168);
     background-color: rgb(22, 22, 22, 0.7);
+
 }
 
 
@@ -295,13 +296,14 @@ body {
     }
 
     #pic img{
-        width: 475;
+        width: 500px;
         height: 300px;
     }
 
     #intro h2 {
         text-align: center;
         padding: 10px;
+    
     }
 
 
