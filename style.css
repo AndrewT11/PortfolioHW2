@@ -1,18 +1,17 @@
-:root {
-    --outer-space: #33393f;
-    --bright-turquoise: #2aefcb;
-    --gin: #e0eae4;
-    --heliotrope: #e866ec;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(68, 66, 66);
 }
 
 /* Nav Bar */
@@ -20,7 +19,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(22, 22, 22, 0.5);
+    background-color: rgb(22, 22, 22);
     position: sticky;
     top: 0;
 }
@@ -33,7 +32,6 @@ html {
 
 .navbar ul li {
     font-family: century;
-    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -42,6 +40,8 @@ html {
     color: white;
     padding: 8px 25px;
     transition: all 0.5s ease;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar ul li a:hover {
@@ -55,8 +55,8 @@ html {
 #home {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 900px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    height: 850px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -69,12 +69,11 @@ html {
     top: 0;
     right: 0;
     background: url('tiger.jpg') no-repeat center center/cover;
-    height: 900px;
+    height: 1000px;
     width: 100%;
     z-index: -1;
     opacity: 0.8;
 }    
-}
 .main { 
     display: flex;
     flex-direction: column;
@@ -98,6 +97,11 @@ html {
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+}
+#about h1 {
+    border: 2px solid white;
+    margin: 30px 40%;
+    border-radius: 15px;
 }
 
 #pic {
@@ -123,13 +127,16 @@ html {
 }
 
 /* Portfolio Section */
+
+
 #portfolio {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0,0,0, 0.9);
     color: white;
     margin: 25px 50px;
     border-radius: 15px;
+    border: 5px solid rgba(110, 110, 110, 0.808);
+    background-color: rgb(22, 22, 22);
 }
 
 .gallery {
@@ -155,7 +162,7 @@ html {
 }
 
 /* PORTFOLIO TEST CODE FOR RISING HEADER IN PORTFOLIO ITEMS */
-#row {
+.row {
     /* create our main grid with flexbox, use negative margins to 
     offset the padding on the .card-column class */
     display: flex;
@@ -165,7 +172,7 @@ html {
     margin-right: -1.5rem;
   }
   
-#justify-center {
+.justify-center {
     justify-content: center;
   }
 
@@ -186,9 +193,10 @@ html {
     justify-content: flex-start;
     min-height: 100%;
     padding: 2rem;
-    color: var(--heliotrope);  
+    color: grey;  
+    margin-bottom: 50px;
     /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px dashed var(--gin);
+    outline: 2px solid #e0eae4;
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
    
@@ -200,9 +208,9 @@ html {
     position: relative;
     margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
-    background-color: var(--outer-space);
-    color: var(--heliotrope);
-    border: 2px solid var(--gin);
+    background-color: #33393f;
+    color: rgb(143, 152, 163);
+    border: 2px solid #e0eae4;
     border-radius: 8px;
     transition: all 0.5s ease-in-out; 
     
@@ -210,13 +218,14 @@ html {
 
 .port-item:hover, .item-header {
     /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+    box-shadow: inset 0px 0px 8px white, 0 0 15px white;
 }
 
 
 /* Contact Section */
 #contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-top: 5px solid black;
     margin-bottom: 30px;
@@ -224,18 +233,20 @@ html {
 
 }
 
-ul {
+.contactbar ul {
     display: flex;
     justify-content: space-evenly;
+    
     list-style: none;
     
 
 }
 
 
-
 .contactbar ul li  {
-    font-size: 500px;
+    font-size: 45px;
+    border: 5px solid rgb(167, 167, 168);
+    background-color: rgb(22, 22, 22, 0.5);
 }
 
 
@@ -305,3 +316,4 @@ ul {
     font-weight: bold;
 }
 
+/* Contact */
