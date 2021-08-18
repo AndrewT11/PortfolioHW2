@@ -175,6 +175,12 @@ body {
 
 }
 
+.port-item h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* PORTFOLIO TEST CODE FOR RISING HEADER IN PORTFOLIO ITEMS */
 .row {
     /* create our main grid with flexbox, use negative margins to 
