@@ -113,7 +113,7 @@ body {
 }
 
 #pic img {
-    width: 50%;
+    width: 400px;
     height: 400px;
    
 }
@@ -122,7 +122,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-   
+    width: 100%;
 }
 
 #intro h2 {
