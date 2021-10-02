@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(22, 22, 22, 0.8);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1;
 }
